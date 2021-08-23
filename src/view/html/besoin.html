@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AND SIMULATOR: Simulation</title>
+    <link rel="stylesheet" href="../css/apport.css">
+</head>
+<body>
+    <div class="profil_simul">
+        <h3>
+            <select name="profilteam" id="profilteam" onchange="onSelectUnionPT()">
+                <option value="profil">Select Profil Team</option>
+                <option value="binar">Binar Profil Team</option>
+                <option value="line">Line Profil Team</option>
+                <option value="step">Step Profil Team</option>
+                <option value="union">Union Profil Team</option>
+            </select>   
+           </h3>
+    </div>
+
+    <div class="tablesimul">
+        <table>
+            <thead>
+                <tr>
+                    <th>Simulation</th>
+                    <th>Apport</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Besoin <input id="takenAmount" type="text" placeholder="FCFA"></td>
+                    <td><p id="conAmount">AND</p></td>
+                </tr>
+                <tr>
+                    <td>Delai </td>
+                    <td><input id="takenDelai" type="text" placeholder="days"></td>
+                </tr>
+                <tr>
+                    <td>Gain Journalier <p id="dailyGain">AND</p></td>
+                    <td><p id="dailyGainfrs">FCFA</p></td>
+                </tr>
+                <tr>
+                    <td>Votre Benefice <p id="yourBenefice">AND</p></td> 
+                    <td><p id="yourBeneficefrs">FCFA</p></td>
+                </tr>
+                <tr>
+                    <td>Apport Minimal <p id="minimal">AND</p></td>
+                    <td><p id="minimalfrs">FCFA</p></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+     <!--<button>Simulation</button>--> 
+
+     <div class="container">
+        <a href="#" onclick="clickSimulate()">
+            <span>Simulation</span>
+        </a>
+    </div>
+
+    <div class="backhome">
+        <a href="home.html">
+            Back to Home
+        </a>
+    </div>
+    
+    <script src="./../../controller/besoin.js"></script>
+</body>
+</html>
