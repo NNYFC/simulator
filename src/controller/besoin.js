@@ -45,15 +45,15 @@ function getSelectedPT(tonApport) {
  * start
  */
 function conversionFCFA_AND(apportFCFA) {
-     apportAND = apportFCFA / 650.00000019500000005850000001755;
-    //apportAND = apportFCFA / 550;
+     //apportAND = apportFCFA / 650.00000019500000005850000001755;
+    apportAND = apportFCFA / 550;
     document.getElementById("conAmount").innerText = apportAND +" AND";
     return apportAND;
 }
 
 function conversionAND_FCFA(apportAND) {
-    apportFCFA = apportAND * 650.00000019500000005850000001755;
-    //apportFCFA = apportAND * 550;
+    //apportFCFA = apportAND * 650.00000019500000005850000001755;
+    apportFCFA = apportAND * 550;
     return apportFCFA;
 }
 /**End Conversion AND FCFA and vice versa */
