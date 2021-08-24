@@ -52,7 +52,7 @@ function conversionFCFA_AND(apportFCFA) {
 }
 
 function conversionAND_FCFA(apportAND) {
-    apportFCFA = apportAND * 650.00000019500000005850000001755;
+    apportFCFA = apportAND * 550;
     return apportFCFA;
 }
 /**End Conversion AND FCFA and vice versa */
